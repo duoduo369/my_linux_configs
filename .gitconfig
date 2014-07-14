@@ -1,0 +1,18 @@
+[credential]
+	helper = store
+[color]
+	branch = auto
+	ui = auto
+	status = auto
+[alias]
+	alog = log --all --decorate --graph --color
+	st = status
+	co = checkout
+	cm = commit
+	stash-unapply = !git stash show -p | git apply -R
+	br = branch
+[user]
+	name = duoduo369
+	email = duoduo3369@gmail.com
+[core]
+	editor = vim
