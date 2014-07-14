@@ -1,0 +1,19 @@
+------------------------------------------------------------
+/edx/app/devpi/venvs/devpi/bin/pip run on Thu Jul 10 12:55:38 2014
+Downloading/unpacking devpi-server
+Cleaning up...
+Exception:
+Traceback (most recent call last):
+  File "/edx/app/devpi/venvs/devpi/local/lib/python2.7/site-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/edx/app/devpi/venvs/devpi/local/lib/python2.7/site-packages/pip/commands/install.py", line 278, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/edx/app/devpi/venvs/devpi/local/lib/python2.7/site-packages/pip/req.py", line 1153, in prepare_files
+    location = req_to_install.build_location(self.build_dir, not self.is_download)
+  File "/edx/app/devpi/venvs/devpi/local/lib/python2.7/site-packages/pip/req.py", line 218, in build_location
+    _make_build_dir(build_dir)
+  File "/edx/app/devpi/venvs/devpi/local/lib/python2.7/site-packages/pip/req.py", line 1527, in _make_build_dir
+    os.makedirs(build_dir)
+  File "/edx/app/devpi/venvs/devpi/lib/python2.7/os.py", line 157, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 13] Permission denied: '/edx/app/devpi/venvs/devpi/build'
