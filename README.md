@@ -22,4 +22,7 @@ zsh
 ---
 .zshrc
 
+janus | vim
+---
+cp .vimrc.after ~/
 
