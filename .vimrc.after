@@ -38,7 +38,9 @@ set autoindent      " autoindent    ai    Very painful to live without this
                     " line will match that of the previous line. 
 set textwidth=79
 
+au BufRead,BufNewFile *.md set filetype=markdown
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 set noswapfile
 
