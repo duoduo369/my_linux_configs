@@ -82,7 +82,8 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias xclip='xclip -selection clipboard'
 alias ll='ls -al'
+alias tar='tar zxvf'
+alias fileserver='python -m SimpleHTTPServer '
 
 # source
 #source /opt/python_env/django1.6.1/bin/activate
-source /opt/python_env/teacher-static/bin/activate
