@@ -82,7 +82,8 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias xclip='xclip -selection clipboard'
 alias ll='ls -al'
-alias tar='tar zxvf'
+alias tarj='tar zxvf'
+alias tary='tar zcvf'
 alias fileserver='python -m SimpleHTTPServer '
 
 # source
