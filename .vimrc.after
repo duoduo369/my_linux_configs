@@ -1,9 +1,9 @@
-set tabstop=2       " A four-space tab indent width is the prefered coding style
+set tabstop=4       " A four-space tab indent width is the prefered coding style
                     " for Python (and everything else!), although of course some
                     " disagree. This page generally assumes you want 4-space
                     " indents.
 
-set shiftwidth=2    " This allows you to use the < and > keys from VIM's visual
+set shiftwidth=4    " This allows you to use the < and > keys from VIM's visual
                     " (marking) mode to block indent/unindent regions
 
 set smarttab        " Use the "shiftwidth" setting for inserting <TAB>s instead
@@ -23,7 +23,7 @@ set expandtab       " expandtab    et    Insert spaces instead of <TAB>
                     " result in problems. It is safer and more portable to
                     " use spaces for indenting.
 
-set softtabstop=2   " softtabstop=4    sts    People like using real tab
+set softtabstop=4   " softtabstop=4    sts    People like using real tab
                     " character instead of spaces because it makes it easier
                     " when pressing BACKSPACE or DELETE, since if the indent
                     " is using spaces it will take 4 keystrokes to delete
@@ -38,9 +38,7 @@ set autoindent      " autoindent    ai    Very painful to live without this
                     " line will match that of the previous line. 
 set textwidth=79
 
-au BufRead,BufNewFile *.md set filetype=markdown
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
-autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 set noswapfile
 
@@ -52,8 +50,12 @@ set noswapfile
 :map <C-i> :tabn<CR>
 :map <C-c> :tabclose<CR>
 
+:map <C-f> :CtrlSF 
+
 :imap <C-l> <C-x><C-o>
 
 call pathogen#infect()
 syntax enable
 filetype plugin indent on
+
+set tags=tags;/
