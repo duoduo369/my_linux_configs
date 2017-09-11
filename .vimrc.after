@@ -59,3 +59,5 @@ syntax enable
 filetype plugin indent on
 
 set tags=tags;/
+
+let g:syntastic_python_flake8_args="--ignore=E501"
